@@ -45,7 +45,7 @@
     "version": "BEFORE=$(jq --raw-output .version src/static/manifest.json) && AFTER=$(date +%Y.%-m.%-d) && grep --files-with-matches --recursive $BEFORE src | xargs sed --in-place \"s/$BEFORE/$AFTER/g\" && git checkout -b version-bump && git commit --all --message=\"Version $AFTER\""
   },
   "dependencies": {
-    "@kiltprotocol/sdk-js": "^0.36.0-rc.1",
+    "@kiltprotocol/sdk-js": "^1.0.0",
     "@polkadot/extension-inject": "^0.57.1",
     "@polkadot/keyring": "^12.6.2",
     "@polkadot/types": "^11.1.1",
